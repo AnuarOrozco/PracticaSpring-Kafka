@@ -33,7 +33,7 @@ public class KafkaProviderConfig {
     }
 
     @Bean
-    public KafkaTemplate<String, String> kafkaTemplate(ProducerFactory<String, String> producerFactory) {
+    public KafkaTemplate<String, String> kafkaTemplate(ProducerFactory<String, String> producerFactory) { // Inject last bean
         return new KafkaTemplate<>(producerFactory);
     }
 
